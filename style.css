@@ -56,12 +56,10 @@ footer {
 
 .banner-text {
     font-size: clamp(20px,1.5vw,30px);
-    /* font-size: 30px; */
 }
 
 .banner-advantage {
     font-size: clamp(10px,10vw,15px);
-    /* font-size: 15px; */
     gap: 15px;
 }
 
@@ -80,8 +78,13 @@ strong {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    justify-content: space-between;
+    /* justify-content: flex-end; */
 }
+
+.footer-team-info p {
+    align-self: flex-end;
+}
+
 
 .offer-one {
     border-bottom: 1px solid #55565A;
@@ -96,15 +99,9 @@ strong {
 
 .feedback {
     background-color: #282829;
+    overflow: visible;
 }
 
-.feedback-form {
-    padding: 70px 0px;
-    margin: 0% 8%;
-    background-color: #fff;
-    border: 2px solid #D5C9BE;
-    border-radius: 30px;
-}
 
 .menu-button {
     margin-left: 8%;
@@ -117,10 +114,38 @@ strong {
     padding: 25px;
     border-radius: 4px;
     border-radius: 4px;
-    font-size: clamp(10px, 1.5vw, 20px);
-    /* font-size: 20px;  */
+    font-size: clamp(10px, 1.5vw, 15px);
     align-self: flex-start;
+    transition: background-color 0.1s linear;
+    
 }
+
+.button:hover {
+    color: black;
+    align-self: flex-start;
+    background-color: #9E4A33;
+    
+}
+
+.image_woman {
+    position: absolute;
+    right: clamp(110px,10%,120px); 
+    bottom: -37px;
+    object-fit: contain;
+    height: 550px;
+    clip-path: inset(0 0 35px 0); 
+}
+
+.feedback-form {
+    padding: 70px 0px;
+    margin: 0% 8%;
+    background-color: #fff;
+    border: 2px solid #D5C9BE;
+    border-radius: 30px;
+    position: relative;
+}
+
+
 
 
 .burger {
@@ -172,6 +197,7 @@ strong {
     margin-left: 8%;
     align-self: center;
     width: 45%;
+    overflow: visible;
 }
 
 .feedback p{
@@ -216,6 +242,7 @@ footer p {
 button {
     font-family: Arial, sans-serif;
     font-weight: bold;
+    border: none;
 }
 
 
@@ -223,6 +250,7 @@ button {
     color: white;
     background-color: #282829;
     padding: 25px;
+    font-size: clamp(10px, 1.5vw, 13px);
     border-radius: 4px;
 }
 
@@ -271,6 +299,11 @@ button {
     font-size: clamp(20px,2vw,30px);
 }
 
+.footer-info-logo {
+    gap: 20px; 
+    justify-content: space-between;
+}
+
 .checkbox-input {
     width: 18px;
     height: 18px; 
@@ -284,6 +317,11 @@ button {
 }
 
 @media (max-width: 1199px) {
+    .image_woman {
+        display: none;
+    }
+
+
     .navigation {
         display: none;
     } 
@@ -412,16 +450,30 @@ button {
       
     .footer-info {
         flex-direction: column-reverse;
-        gap: 30px;
+        gap: 50px;
     }
 
     .footer-team-info {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-        justify-content: center;
         align-items: center;
     }
 
+    .footer-team-info button {
+        width: 100%;
+    }
+
+    .footer-team-info p {
+        align-self: center;
+    }
     
+
+    .footer-info-logo {
+        align-items: center;
+    }
+    
+    .feedback-input-el {
+        padding-left: clamp(10px, 5%, 30px);
+        font-size: 10px;
+        /* padding: 14px 10px; */
+    }
+
 }
