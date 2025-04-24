@@ -32,6 +32,8 @@ header {
 
 
 footer {
+    display: flex;
+    flex-direction: column;
     background-color: #222222;
 }
 
@@ -169,6 +171,8 @@ footer {
 }
 
 .footer-info {
+    display: flex;
+    flex-direction: row;
     padding: 30px 8%;
     border-top: 2px solid #D5C9BE;
     justify-content: space-between;
@@ -362,4 +366,9 @@ button {
         padding-top: 50px;
     }
       
+    .footer-info {
+        flex-direction: column-reverse;
+        gap: 30px;
+    }
+
 }
