@@ -51,19 +51,23 @@ footer {
 }
 
 .banner-title {
-    font-size: 50px;
+    font-size: clamp(30px,2.5vw,60px);
 }
 
 .banner-text {
-    font-size: 30px;
+    font-size: clamp(20px,1.5vw,30px);
+    /* font-size: 30px; */
 }
 
 .banner-advantage {
-    font-size: 15px;
+    font-size: clamp(10px,10vw,15px);
+    /* font-size: 15px; */
     gap: 15px;
 }
 
-
+strong {
+    font-size: (10px,1vw,20px);
+}
 
 .offer-list {
     display: flex;
@@ -72,11 +76,22 @@ footer {
     align-content: space-around;
 }
 
+.footer-team-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: space-between;
+}
+
 .offer-one {
     border-bottom: 1px solid #55565A;
     padding-bottom: 20px;
     margin-top: 20px;
     
+}
+
+.offer-one p {
+    font-size: clamp(15px, 1.2vw ,25px);
 }
 
 .feedback {
@@ -95,6 +110,18 @@ footer {
     margin-left: 8%;
     /* visibility: hidden; */
 }
+
+
+.button {
+    color: black;
+    padding: 25px;
+    border-radius: 4px;
+    border-radius: 4px;
+    font-size: clamp(10px, 1.5vw, 20px);
+    /* font-size: 20px;  */
+    align-self: flex-start;
+}
+
 
 .burger {
     /* display: none; */
@@ -156,7 +183,7 @@ footer {
 .feedback-input-el {
     color: black;
     font-family:  Arial, sans-serif;
-    font-size: 20px;
+    font-size: clamp(15px, 1.5vw, 20px);
     padding: 14px 38px;
     margin-bottom: 20px;
     border: 2px solid #D6D6D6;
@@ -164,9 +191,12 @@ footer {
 }
 
 .footer-nav {
+    display: flex;
+    flex-direction: row;
     justify-content: center;
     padding: 30px 8%;
     gap: 6%;
+    font-size: clamp(12px,1vw,20px);
     border-top: 2px solid #D5C9BE;
 }
 
@@ -188,12 +218,6 @@ button {
     font-weight: bold;
 }
 
-.button {
-    color: black;
-    padding: 25px;
-    border-radius: 4px;
-    border-radius: 4px;
-}
 
 .button-feedback {
     color: white;
@@ -244,7 +268,7 @@ button {
 .title-feedback {
     color: #38535D; 
     margin-bottom: 35px; 
-    font-size: 30px;
+    font-size: clamp(20px,2vw,30px);
 }
 
 .checkbox-input {
@@ -270,6 +294,24 @@ button {
 
     .banner-title {
         font-size: 35px;
+    }
+
+    .offer-one p {
+        font-size: clamp(15px, 1.2vw ,25px);
+    }
+
+    .banner-title {
+        font-size: clamp(20px,2.5vw,30px);
+    }
+    
+    .banner-text {
+        font-size: clamp(10px,1.5vw,20px);
+        /* font-size: 30px; */
+    }
+    
+    .banner-advantage {
+        font-size: clamp(10px,10vw,15px);
+        gap: 15px;
     }
     
     .banner-text {
@@ -309,7 +351,7 @@ button {
     }
 
     .title-feedback {
-        font-size: 20px;
+        font-size: clamp(15px,2vw,20px);
     }
 
     .feedback-input-el {
@@ -347,6 +389,8 @@ button {
 
     }
 
+    
+
     .banner::before {
         content: "";
         position: absolute;
@@ -371,4 +415,13 @@ button {
         gap: 30px;
     }
 
+    .footer-team-info {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    
 }
