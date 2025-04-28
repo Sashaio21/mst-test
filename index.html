@@ -70,16 +70,16 @@
 
     <div class="col feedback gap-block">
         <div class="row feedback-form image-bg"  style="overflow: visible;">
-            <div class="col feedback-input">
+            <form class="col feedback-input">
                 <h1 class="title-feedback">Find Your Perfect Space <br>Hassle-Free Rental Solutions</h1>
-                <input class="feedback-input-el" placeholder="Name">
-                <input class="feedback-input-el" placeholder="E-mail">
+                <input id="name-user" name="name-user" class="feedback-input-el" type="text" placeholder="Name">
+                <input id="e-mail" name="e-mail" class="feedback-input-el" type="email" placeholder="E-mail">
                 <div class="row" style="gap: 10px; margin-bottom: 20px;">
-                    <input type="checkbox" class="checkbox-input" />
+                    <input id="accept-privacy" name="accept-privacy" type="checkbox" class="checkbox-input" />
                     <p>I accept Privacy policy</p>
                 </div>
-                <button class="button-feedback">SUBMIT FORM</button>
-            </div>
+                <button type="submit" class="button-feedback">SUBMIT FORM</button>
+            </form>
             <img src="assets/image/photo_2023-11-03 15.50 1.png" class="image_woman">
         </div>
     </div>
